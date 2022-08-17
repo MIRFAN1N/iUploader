@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iUploader - Demo</title>
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/iUploader.css">
+</head>
+<body>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <div class="texting-contianer">
+            <h1>Upload Multiple Files</h1>
+            <div class="texting-contianer-inner custom-card custom-border custom-shadow">
+                <div class="texting-contianer-main">
+                    <input type="file" class="iUploader-input" data-name="org_docs" id="iUploader-input-01" multiple>
+                </div>
+            </div>
+        </div>
+        <div class="texting-contianer">
+            <h1>Upload Multiple Files</h1>
+            <div class="texting-contianer-inner custom-card custom-border custom-shadow">
+                <div class="texting-contianer-main">
+                    <input type="file" data-name="legal_docs" class="iUploader-input" id="iUploader-input-02" multiple>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/IUploader.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
