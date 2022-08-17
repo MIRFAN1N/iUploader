@@ -95,7 +95,8 @@
                 }
             });
 
-            $(document).on('click','.iUploader-single-asset-option-inner.remove',function() {
+            $(document).on('click','.iUploader-single-asset-option-inner.remove',function(e) {
+                e.stopPropagation();
                 var file_input_field = $(this).attr('data-id');
                 var file_input_field_index = $(this).attr('data-index');
                 var to_remove = $(this).attr('data-remove');
